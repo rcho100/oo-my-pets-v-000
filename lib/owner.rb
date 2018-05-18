@@ -61,9 +61,23 @@ class Owner
     @pets = {fishes: [], cats: [], dogs: []}
   end
 
+  # pry(#<Owner>)> self.pets
+  # => {:fishes=>
+  #   [#<Fish:0x00000002b38df8 @mood="nervous", @name="Bubbles">,
+  #    #<Fish:0x00000002b38d80 @mood="nervous", @name="Nemo">],
+  #  :cats=>[#<Cat:0x00000002b38d08 @mood="nervous", @name="Crookshanks">],
+  #  :dogs=>
+  #   [#<Dog:0x00000002b38c90 @mood="nervous", @name="Fido">,
+  #    #<Dog:0x00000002b38c18 @mood="nervous", @name="Snuffles">,
+  #    #<Dog:0x00000002b38ba0 @mood="nervous", @name="Charley">]}
+
   def list_pets
     binding.pry
-    self.pets
+
+    self.pets.each do |pet_type, pets|
+      pets.size pet_type
+      binding.pry
+    end
   end
 
   # * When an owner buys a new pet, the `buy_``cat/dog/fish` method takes in an argument of a *name*. You must take that name and do the following:

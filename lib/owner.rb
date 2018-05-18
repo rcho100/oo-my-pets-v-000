@@ -22,4 +22,7 @@ class Owner
     @@all
   end
 
+  def say_species
+    self.species
+  end
 end

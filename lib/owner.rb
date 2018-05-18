@@ -30,7 +30,6 @@ class Owner
   def buy_fish(name)
     fish = Fish.new(name)
     pets_hash = self.pets
-    binding.pry
     pets_hash[:fishes] << fish
   end
 

@@ -30,8 +30,8 @@ class Owner
   def buy_fish(name)
     fish = Fish.new(name)
     array_of_pets = self.pets
-     
-    # binding.pry
+
+     binding.pry
   end
 
   # * When an owner buys a new pet, the `buy_``cat/dog/fish` method takes in an argument of a *name*. You must take that name and do the following:

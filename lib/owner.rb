@@ -57,7 +57,7 @@ class Owner
   end
 
   def sell_pets
-
+    @pets = {fishes: [], cats: [], dogs: []}
   end
 
   # * When an owner buys a new pet, the `buy_``cat/dog/fish` method takes in an argument of a *name*. You must take that name and do the following:

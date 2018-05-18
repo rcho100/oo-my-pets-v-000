@@ -41,7 +41,7 @@ class Owner
 
   def buy_dog
     dog = Dog.new(name)
-    self.pets[:fishes] << fish
+    self.pets[:dogs] << dog
   end
 
   # * When an owner buys a new pet, the `buy_``cat/dog/fish` method takes in an argument of a *name*. You must take that name and do the following:

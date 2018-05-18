@@ -29,8 +29,8 @@ class Owner
 
   def buy_fish(name)
     fish = Fish.new(name)
-    array_of_pets = self.pets
-
+    pets_hash = self.pets
+    pets_hash[:fishes] = fish
      binding.pry
   end
 

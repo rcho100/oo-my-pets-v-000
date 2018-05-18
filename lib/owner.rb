@@ -82,7 +82,6 @@ class Owner
       elsif pet_type == :dogs
         dogs_number = pets.size
       end
-      binding.pry
     end
   end
 

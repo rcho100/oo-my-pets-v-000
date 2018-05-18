@@ -81,7 +81,7 @@ class Owner
         @dogs_number = pets.size
       end
     end
-
+    "I have #{@fish_number} fish, #{@dogs_number} dog(s), and #{@cats_number} cat(s)."
   end
 
   # * When an owner buys a new pet, the `buy_``cat/dog/fish` method takes in an argument of a *name*. You must take that name and do the following:

@@ -46,7 +46,7 @@ class Owner
 
   def walk_dogs
     binding.pry
-    self.pets
+    self.pets.[:dogs].each {|dog| dog.mood = "happy"}
   end
 
   # * When an owner buys a new pet, the `buy_``cat/dog/fish` method takes in an argument of a *name*. You must take that name and do the following:

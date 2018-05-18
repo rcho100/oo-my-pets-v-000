@@ -1,3 +1,4 @@
+require "pry"
 class Owner
   attr_accessor :pets
   attr_reader :species
@@ -6,6 +7,7 @@ class Owner
   def initialize(name)
     @@all << self
     @pets = {fishes: [], cats: [], dogs: []}
+    binding.pry
     @species
   end
 

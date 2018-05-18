@@ -72,17 +72,16 @@ class Owner
   #    #<Dog:0x00000002b38ba0 @mood="nervous", @name="Charley">]}
 
   def list_pets
-    binding.pry
-
     self.pets.each do |pet_type, pets|
       if pet_type == :fishes
-        fish_number = pets.size
+        @fish_number = pets.size
       elsif pet_type == :cats
-        cats_number = pets.size
+        @cats_number = pets.size
       elsif pet_type == :dogs
-        dogs_number = pets.size
+        @dogs_number = pets.size
       end
     end
+
   end
 
   # * When an owner buys a new pet, the `buy_``cat/dog/fish` method takes in an argument of a *name*. You must take that name and do the following:

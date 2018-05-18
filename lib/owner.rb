@@ -9,7 +9,7 @@ class Owner
   end
 
   def self.reset_all
-    @@all.size
+    @@all = []
   end
 
   def self.count

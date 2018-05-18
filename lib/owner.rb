@@ -52,6 +52,10 @@ class Owner
     self.pets[:cats].each {|cat| cat.mood = "happy"}
   end
 
+  def feed_fish
+    self.pets[:fishes].each {|fish| fish.mood = "happy"}
+  end
+
   # * When an owner buys a new pet, the `buy_``cat/dog/fish` method takes in an argument of a *name*. You must take that name and do the following:
   #   * *Make a new instance of the appropriate pet, initializing it with that name*.
   #   * Associate that new pet instance to the owner by adding it to the appropriate array-value of the `@pets` hash stored in the `pets` `attr_accessor`.

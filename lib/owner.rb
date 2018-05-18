@@ -75,6 +75,13 @@ class Owner
     binding.pry
 
     self.pets.each do |pet_type, pets|
+      if pet_type == :fishes
+        fish_number = pets.size
+      elsif pet_type == :cats
+        cats_number = pets.size
+      elsif pet_type == :dogs
+        dogs_number = pets.size
+      end
       pets.size pet_type
       binding.pry
     end
